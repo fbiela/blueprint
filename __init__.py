@@ -1,6 +1,6 @@
 """Import."""
 from flask import Flask, render_template, redirect, url_for
-from flask_bootstrap import Bootstrap 
+from flask_bootstrap import Bootstrap
 
 
 def create_app():
@@ -29,12 +29,12 @@ def create_app():
         """Signup."""
         return render_template('signup.html')
 
-    app.route("/contact")
+    @app.route("/contact")
     def _contact():
         """Contact."""
-        return render_tempate('contact.html')
+        return render_template('contact.html')
 
-    app.route("/about")
+    @app.route("/about")
     def _about():
         """About."""
         return render_template('about.html')
