@@ -1,7 +1,7 @@
 """Import."""
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap
-
+from forms import UserLogin, SignUp
 
 def create_app():
     """Flask app."""
@@ -14,20 +14,26 @@ def create_app():
         """Home."""
         return render_template('home.html')
 
-    @app.route("/login")
+    @app.route("/login", methods = ['GET', 'POST'])
     def _login():
         """Login."""
-        return render_template('login.html')
+        form = UserLogin()
+        if form.validate_on_submit():
+            return "done."
+        return render_template('login.html', form = form)
 
     @app.route("/logout")
     def _logout():
         """Logout."""
         return render_template('logout.html')
 
-    @app.route("/signup")
+    @app.route("/signup", methods = ['GET', 'POST'])
     def _signup():
         """Signup."""
-        return render_template('signup.html')
+        form = SignUp()
+        if form.validate_on_submit():
+            return "done."
+        return render_template('signup.html', form = form)
 
     @app.route("/contact")
     def _contact():

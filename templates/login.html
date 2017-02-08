@@ -1,10 +1,28 @@
 {% extends "layout.html"  %}
-
+{% import "bootstrap/wtf.html" as wtf %}
+ 
 {% block content %}
 <div  class="container">
   <div class="jumbotron">
     <!-- begin -->
     <h1>Login.<small> bem vindo!</small></h1>
+    <!-- panel -->
+    <div class="container">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><h2>sign <small>in...</small></h2></div>
+          <div class="panel-body">
+            <div class="container">
+              <form class="" method="POST" role="form" action="/login">
+                {{ form.csrf_token }}
+                {{ wtf.form_field(form.username) }}
+                {{ wtf.form_field(form.password) }}
+                {{ wtf.form_field(form.submit) }}
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!--end  panel -->
     <!-- end -->
   </div>
 </div>
