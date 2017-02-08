@@ -9,6 +9,7 @@ app = Flask('database')
 app.config.from_pyfile('app.cfg')
 db = SQLAlchemy(app)
 
+
 class User(db.Model):
     """__tablename__ user."""
 
