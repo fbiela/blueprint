@@ -1,10 +1,12 @@
 """Import."""
 from flask import Flask, render_template, redirect, url_for
+from flask_bootstrap import Bootstrap
 
 
 def create_app():
     """Flask app."""
     app = Flask('blueprint')
+    Bootstrap(app)
     app.config.from_pyfile('app.cfg')
 
     @app.route("/")

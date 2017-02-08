@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+{% block html_attribs %} lang="en"{% endblock %}
+{% block title %}blueprint{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
+{% endblock %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block body %}
+{{ super() }}
+<div class="container">
+  <footer class="footer">
+    <p><small>&copy; 3fx, Inc.</small></p>
+  </footer>
+</div>
+{% endblock %}
