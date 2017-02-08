@@ -1,4 +1,4 @@
-"""Import.""" 
+"""Import."""
 from flask import Flask
 from flask_wtf import FlaskForm
 from flask_wtf.csrf import CSRFProtect
@@ -31,3 +31,13 @@ class SignUp(FlaskForm):
     confirm = PasswordField('confirm', validators = [InputRequired()])
     notifications = BooleanField('notifications', default = True)
     submit = SubmitField('sign up')
+
+
+class ContactUs(FlaskForm):
+    """class contact us."""
+
+    name = TextField('name', validators = [InputRequired()])
+    phone = TextField('phone', validators = [InputRequired()])
+    email = TextField('email', validators = [InputRequired(), Email()])
+    message = TextAreaField('message', validators = [InputRequired()])
+    submit = SubmitField('send')
