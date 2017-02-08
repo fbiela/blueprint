@@ -1,6 +1,33 @@
 # blueprint
 
-Frederico Sales [fredericosales@globo.com](mailto:fredericosales@globo.com) 2017
+[Frederico Sales](mailto:fredericosales@globo.com) - 2017
+
+> flask work box
+
+## requirements docs
+
+- [Flask](http://flask.pocoo.org/docs/0.12/)
+- [Flask-WTF](https://flask-wtf.readthedocs.io/en/stable/)
+- [Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org/2.1/)
+- [Flask-Login](https://flask-login.readthedocs.io/en/latest/)
+- [Flask-Admin](https://flask-admin.readthedocs.io/en/latest/)
+- [Flask-Mail](https://pythonhosted.org/Flask-Mail/)
+- [Flask-Bootstrap](https://pythonhosted.org/Flask-Bootstrap/)
+- [Flask-Classy](https://pythonhosted.org/Flask-Classy/)
+- [Flask-Dashed](https://github.com/jeanphix/Flask-Dashed/tree/master/docs)
+- [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/)
+- [Flask-Openid](https://pythonhosted.org/Flask-OpenID/)
+- [Flask-Security](https://pythonhosted.org/Flask-Security/)
+- [Flask-Uploads](http://flask.pocoo.org/docs/0.12/patterns/fileuploads/)
+- [Flask-Themes](https://pythonhosted.org/Flask-Themes/)
+- [Flask-User](https://pythonhosted.org/Flask-User/)
+- [Flask-Bcrypt](https://flask-bcrypt.readthedocs.io/en/latest/)
+- [Frozen-Flask](http://pythonhosted.org/Frozen-Flask/)
+- [Numpy](https://docs.scipy.org/doc/numpy/reference/)
+- [Reportlab](http://www.reportlab.com/documentation/)
+- [Matplotlib](http://matplotlib.org/contents.html)
+- [Pysqlite](https://pysqlite.readthedocs.io/en/latest/index.html)
+- [Psycopg2](http://initd.org/psycopg/docs/)
 
 ## Mail
 
@@ -10,10 +37,6 @@ Frederico Sales [fredericosales@globo.com](mailto:fredericosales@globo.com) 2017
 - MAIL_USE_TTL = False
 - MAIL_USERNAME = 'username@server.com'
 - MAIL_PASSWORD = 'secret_password'
-
-## SQLAlchemy
-
-- flask-sqlalchemy docs
 
 ## sqlite:
 
