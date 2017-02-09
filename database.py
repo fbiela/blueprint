@@ -1,13 +1,16 @@
-"""Import.""" 
+"""Import."""
 from datetime import datetime
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import delete, insert, update
 
+from flask_bcrypt import Bcrypt
+
 app = Flask('database')
 app.config.from_pyfile('app.cfg')
 db = SQLAlchemy(app)
+bcrypt = Bcrypt(app)
 
 
 class User(db.Model):

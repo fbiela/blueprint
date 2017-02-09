@@ -1,13 +1,19 @@
 """Import."""
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap
+from flask_nav import Nav
+from flask_nav.elements import Navbar,  View
+from flask_bcrypt import Bcrypt
 from forms import UserLogin, SignUp, ContactUs
+from database import User, db 
+
 
 def create_app():
     """Flask app."""
     app = Flask('blueprint')
     Bootstrap(app)
     app.config.from_pyfile('app.cfg')
+    bcrypt = Bcrypt(app)
 
     @app.route("/")
     def _home():

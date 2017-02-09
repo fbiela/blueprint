@@ -8,6 +8,7 @@ flask-bootstrap
 flask-classy
 flask-dashed
 flask-migrate
+flask-nav
 flask-openid
 flask-security
 flask-uploads
