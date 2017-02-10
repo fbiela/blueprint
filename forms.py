@@ -10,7 +10,7 @@ from wtforms.validators import (AnyOf, Email, EqualTo, InputRequired,
 
 app = Flask('forms')
 CSRFProtect(app)
-app.config.from_pyfile('app.cfg')
+app.config.from_pyfile('/home/frederico/virtualenvs/blueprint/app/app.cfg')
 
 
 class UserLogin(FlaskForm):

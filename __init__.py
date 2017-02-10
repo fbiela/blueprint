@@ -5,14 +5,14 @@ from flask_nav import Nav
 from flask_nav.elements import Navbar,  View
 from flask_bcrypt import Bcrypt
 from forms import UserLogin, SignUp, ContactUs
-from database import User, db 
+from database import User, db
 
 
 def create_app():
     """Flask app."""
     app = Flask('blueprint')
     Bootstrap(app)
-    app.config.from_pyfile('app.cfg')
+    app.config.from_pyfile('/home/frederico/virtualenvs/blueprint/app/app.cfg')
     bcrypt = Bcrypt(app)
 
     @app.route("/")
