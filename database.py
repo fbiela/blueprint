@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import delete, insert, update
 
 app = Flask('database')
-app.config.from_pyfile('/home/frederico/virtualenvs/blueprint/app/app.cfg')
+app.config.from_pyfile('/home/frederico/virtualenvs/blueprint/blueprint/app.cfg')
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 

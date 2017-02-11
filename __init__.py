@@ -12,11 +12,11 @@ def create_app():
     """Flask app."""
     app = Flask('blueprint')
     Bootstrap(app)
-    app.config.from_pyfile('/home/frederico/virtualenvs/blueprint/app/app.cfg')
+    app.config.from_pyfile('/home/frederico/virtualenvs/blueprint/blueprint/app.cfg')
     bcrypt = Bcrypt(app)
 
     @app.route("/")
-    def _home():
+    def index():
         """Home."""
         return render_template('home.html')
 
